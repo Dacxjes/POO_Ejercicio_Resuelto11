@@ -1,0 +1,33 @@
+
+package poo_numeromayor_ejercicio_resuelto11;
+
+import java.util.Scanner;
+
+public class POO_numeromayor_Ejercicio_Resuelto11 {
+
+    public static void main(String[] args) {
+        Scanner n_mayor = new Scanner(System.in);
+        
+        // Numeros a comparar
+        int numero1, numero2, numero3;
+        
+        System.out.println("Ingrese el numero 1: ");
+        numero1 = n_mayor.nextInt();
+        System.out.println("Ingrese el numero 2: ");
+        numero2 = n_mayor.nextInt();
+        System.out.println("Ingrese el numero 3: ");
+        numero3 = n_mayor.nextInt();
+        
+        if (numero1 > numero2 && numero1 >numero3){
+            System.out.println("El numero mayor es el numero 1: " + numero1);
+        }
+        else if (numero2 > numero1 && numero2 >numero3){
+            System.out.println("El numero mayor es el numero 2: " + numero2);
+        }
+        else {
+            System.out.println("El numero mayor es el numero 3: " + numero3);
+        }
+        
+    }
+    
+}
